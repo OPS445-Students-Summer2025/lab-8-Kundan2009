@@ -1,0 +1,37 @@
+
+PLAY [Configure OPS445 CentOS 7 VM] ********************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [Update Apache (httpd) to latest version] *********************************
+ok: [vmlab]
+
+TASK [Ensure EPEL repository is installed] *************************************
+ok: [vmlab]
+
+TASK [Remove tree package if installed] ****************************************
+ok: [vmlab]
+
+TASK [Set hostname to Seneca ID] ***********************************************
+changed: [vmlab]
+
+TASK [Create a new user with sudo access] **************************************
+changed: [vmlab]
+
+TASK [Add SSH public key to new user] ******************************************
+changed: [vmlab]
+
+TASK [Create ops445 lab directory structure] ***********************************
+changed: [vmlab] => (item=1)
+changed: [vmlab] => (item=2)
+changed: [vmlab] => (item=3)
+changed: [vmlab] => (item=4)
+changed: [vmlab] => (item=5)
+changed: [vmlab] => (item=6)
+changed: [vmlab] => (item=7)
+changed: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
