@@ -4,7 +4,7 @@
   user: student
   become: yes
   vars:
-    seneca_id: kppatel43  # <-- Replace this with your real Seneca ID
+    seneca_id: kppatel43 
     ssh_pub_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
     base_dir: "/home/{{ seneca_id }}/ops445"
 
